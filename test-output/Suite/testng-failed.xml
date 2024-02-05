@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="amazon.Test.ProductDeatailsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifySearchedProduct"/>
+        </methods>
+      </class> <!-- amazon.Test.ProductDeatailsTest -->
+      <class name="amazon.Test.SignOutTest">
+        <methods>
+          <include name="userSignOut"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- amazon.Test.SignOutTest -->
+      <class name="amazon.Test.SearchResultsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="searchValidProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- amazon.Test.SearchResultsTest -->
+      <class name="amazon.Test.SignInTest">
+        <methods>
+          <include name="signIn_With_ValidCredential"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- amazon.Test.SignInTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
